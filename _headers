@@ -1,0 +1,10 @@
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/*.jsx
+  Content-Type: text/babel; charset=utf-8
+
+/*.js
+  Cache-Control: public, max-age=3600
