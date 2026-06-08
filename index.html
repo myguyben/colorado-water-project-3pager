@@ -307,6 +307,10 @@
   }
   .bg-sage .lbl, .bg-ink .lbl, .bg-terra .lbl { color: rgba(255,255,255,.6); }
 
+  /* Compact table variant (dense summary slide) */
+  .tbl.compact th, .tbl.compact td{ padding: 14px 16px 14px 0; }
+  .tbl.compact tr:last-child th, .tbl.compact tr:last-child td{ padding-top: 20px; }
+
   /* === Print one slide per page === */
   @media print{
     section{ page-break-after: always; break-after: page; }
@@ -461,18 +465,18 @@
 
 
   <!-- ============== 3. THE PLAN & THE RETURNS ============== -->
-  <section class="bg-sage" data-label="03 The plan and the returns">
+  <section class="bg-sage" data-label="03 The plan and the returns" style="padding-top: 76px; padding-bottom: 72px;">
     <div class="topo-bg"></div>
     <div class="frame-marks"><span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span></div>
 
-    <div class="slide-head" style="margin-bottom: 36px;">
+    <div class="slide-head" style="margin-bottom: 26px; gap: 16px;">
       <div class="eyebrow-row">
         <span class="eyebrow">02 · The plan</span>
         <span class="pill mono" style="color: rgba(241,235,222,.6);">Four beneficial uses · one footprint</span>
       </div>
       <h2 class="title">From $80M to $2.35B.</h2>
-      <p class="subtitle" style="max-width: 1560px; color: rgba(241,235,222,.82);">
-        Acquire ~50,000 contiguous acres at ~$3,500/acre &middot; adjudicate up to 125,000 acre-feet at the current $16,000/AF appraisal &middot; layer four compounding beneficial uses that each raise the unit value of the water beneath them.
+      <p class="subtitle" style="max-width: 1560px; font-size: 31px; color: rgba(241,235,222,.82);">
+        Acquire ~50,000 contiguous acres at ~$3,500/acre &middot; adjudicate up to 125,000 AF at the current $16,000/AF appraisal &middot; layer four compounding beneficial uses, each raising the unit value of the water beneath it.
       </p>
     </div>
 
@@ -481,7 +485,7 @@
       <!-- LEFT: returns table -->
       <div>
         <div class="lbl" style="margin-bottom: 18px;">Net revenue at maturity &mdash; 2025 dollars</div>
-        <table class="tbl" style="font-size: 25px;">
+        <table class="tbl compact" style="font-size: 25px;">
           <colgroup><col/><col style="width: 220px;"/></colgroup>
           <thead>
             <tr>
@@ -512,24 +516,24 @@
 
       <!-- RIGHT: trajectory + cost -->
       <div>
-        <div class="lbl" style="margin-bottom: 18px;">Asset value trajectory</div>
-        <div class="timeline-row" style="grid-template-columns: 180px 1fr 220px; padding: 26px 0;">
+        <div class="lbl" style="margin-bottom: 14px;">Asset value trajectory</div>
+        <div class="timeline-row" style="grid-template-columns: 180px 1fr 220px; padding: 18px 0;">
           <div class="yr">Yr 1 — 3</div>
-          <div><div class="label" style="font-size:32px; color:#f1ebde;">First assemblage</div><p class="small mute" style="margin-top:6px;">~12,870 ac · 35,000 AF · solar live, housing underway</p></div>
-          <div class="stat" style="font-size:48px; color:#f1ebde;">$673M</div>
+          <div><div class="label" style="font-size:30px; color:#f1ebde;">First assemblage</div><p class="small mute" style="margin-top:4px;">~12,870 ac · 35,000 AF · solar live, housing underway</p></div>
+          <div class="stat" style="font-size:46px; color:#f1ebde;">$673M</div>
         </div>
-        <div class="timeline-row" style="grid-template-columns: 180px 1fr 220px; padding: 26px 0;">
+        <div class="timeline-row" style="grid-template-columns: 180px 1fr 220px; padding: 18px 0;">
           <div class="yr">Yr 3 — 5</div>
-          <div><div class="label" style="font-size:32px; color:#f1ebde;">Offsite assemblage option</div><p class="small mute" style="margin-top:6px;">+10,000 ac · +72,000 AF undeveloped rights</p></div>
-          <div class="stat" style="font-size:48px; color:#f1ebde;">$1.40B</div>
+          <div><div class="label" style="font-size:30px; color:#f1ebde;">Offsite assemblage option</div><p class="small mute" style="margin-top:4px;">+10,000 ac · +72,000 AF undeveloped rights</p></div>
+          <div class="stat" style="font-size:46px; color:#f1ebde;">$1.40B</div>
         </div>
-        <div class="timeline-row" style="grid-template-columns: 180px 1fr 220px; padding: 26px 0; border-bottom:0;">
+        <div class="timeline-row" style="grid-template-columns: 180px 1fr 220px; padding: 18px 0; border-bottom:0;">
           <div class="yr">Yr 5 — 10</div>
-          <div><div class="label" style="font-size:32px; color:#f1ebde;">Mature portfolio</div><p class="small mute" style="margin-top:6px;">up to 50,000 ac · up to 125,000 AF adjudicated</p></div>
-          <div class="stat" style="font-size:48px; color:#e6b39a;">$2.35B</div>
+          <div><div class="label" style="font-size:30px; color:#f1ebde;">Mature portfolio</div><p class="small mute" style="margin-top:4px;">up to 50,000 ac · up to 125,000 AF adjudicated</p></div>
+          <div class="stat" style="font-size:46px; color:#e6b39a;">$2.35B</div>
         </div>
 
-        <div class="row" style="gap: 56px; margin-top: 36px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,.22);">
+        <div class="row" style="gap: 56px; margin-top: 26px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.22);">
           <div>
             <div class="lbl">Capital to deploy</div>
             <div class="serif" style="font-size: 54px; color:#f1ebde; margin-top: 8px;">~$175M</div>
